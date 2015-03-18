@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="./main.css" />
+
+<div class="row">
+	<div class="span9" style='margin-top:10px'>
+		
+		<div id='tusc_container_wrapper'></div>
+		
+		<p>This tool can upload Geograph.org images to Wikimedia Commons.</p>
+		
+		<form class="well form-inline" id='theform'>
+
+			<formset>
+				<table class='table table-condensed'>
+					<tr>
+						<th class='span5'>Geograph server</th>
+						<td><input type='text' class='span6' id='server' rel='tooltip' title='To support multiple geograph sites, you can change the server here. To pre-set, use URL parameter "server".' value='www.geograph.org.uk' /></td>
+					</tr>
+					<tr>
+						<th class='span5'>Photo ID</th>
+						<td><input type='text' class='span6' id='photo_id' rel='tooltip' title='Insert the numeric photo ID here. To pre-set, use URL parameter "photo_id".' /></td>
+					</tr>
+					<tr>
+						<th class='span5'>Optional categories</th>
+						<td><textarea class='span6' id='categories' rel='tooltip' title='Insert (optional) categories here, one category name per line. To pre-set, use URL parameter "categories".' rows='3'></textarea></td>
+					</tr>
+				</table>
+			</formset>
+			
+			<div style='text-align:right'>
+				<button id='b_run' class='btn-primary' onclick='runTool();return false'><i class='icon-play icon-white'></i> Run</button>
+			</div>
+
+		</form>
+		
+	</div>
+<!--	<div class="span3">
+		<h3>Examples</h3>
+		<div class='well'>
+			<ul class='nav'>
+				<li><a href='#' onclick='showExample("Computational Biology");return false'>Computational Biology</a></li>
+				<li><a href='#' onclick='showExample("spaceflight");return false'>Spaceflight</a></li>
+			</ul>
+		</div>
+	</div>-->
+</div>
+
+
+<div class="row" id='result_container'>
+</div>
+

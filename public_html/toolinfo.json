@@ -1,0 +1,7 @@
+{
+    "name" : "Geograph2Commons",
+    "description" : "Can upload a single file from geograph.co.uketc.  to Commons.",
+    "url" : "http://tools.wmflabs.org/geograph2commons",
+    "keywords" : "commons, file, transfer, copy, geograph",
+    "author" : "Magnus Manske"
+}
